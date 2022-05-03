@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>GoScreen</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-item">
+            <h2 class="h2-title"><i class="fa-solid fa-moon"></i> GoScreen</h2>
+        </div>
+
+    </div>
+    <div class="video">
+        <div id="answer-buttons"></div>
+        <video id="videomp4" controls>
+            <source src="video/gorillaz.mp4" type="video/mp4">
+            <source src="video/gorillaz.ogg" type="video/ogg">
+            <track king="subtitle" src="translate/subtitle.en.vtt" srclang="en" label="İngilizce">
+        </video>
+    </div>
+    <div id="btn-group">
+        <button id="open">Altyazı Açık</button>
+        <button id="close">Altyazı Kapalı</button>
+    </div>
+    <div id="table-score">
+        <table id="score-group">
+            <tr>
+                <th id="score">Score</th>
+            </tr>
+            <tr>
+                <td class="score-result">true</td>
+                <td class="score-result">false</td>
+            </tr>
+            <tr>
+                <td id="value-green">0</td>
+                <td id="value-red">0</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="javascript/count.js"></script>
+    <script src="javascript/melancholy.js"></script>
+    <script src="javascript/script.js"></script>
+
+</body>
+
+</html>
